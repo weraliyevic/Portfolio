@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -264,7 +265,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
             animation: shimmer 3s linear infinite;
         }
 
@@ -516,6 +517,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -523,13 +525,25 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(200%) translateY(200%) rotate(45deg); }
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+
+            100% {
+                transform: translateX(200%) translateY(200%) rotate(45deg);
+            }
         }
 
         /* Responsive Design */
@@ -579,6 +593,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -598,11 +613,11 @@
     <section class="hero" id="home">
         <div class="floating-elements" id="floatingElements"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Salom, men Full-Stack Dasturchiman</h1>
+            <h1 class="hero-title">Salom, men Frontend Dasturchiman</h1>
             <p class="hero-subtitle">Web va Mobil Ilovalar Yaratuvchisi</p>
             <p class="hero-description">
-                Zamonaviy texnologiyalar yordamida ajoyib raqamli tajribalar yarataman. 
-                Frontend va Backend rivojlantirishda 5+ yillik tajribaga egaman.
+                Zamonaviy texnologiyalar yordamida ajoyib raqamli tajribalar yarataman.
+                Frontend rivojlantirishda 1 yillik tajribaga egaman.
             </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">Loyihalarni Ko'rish</a>
@@ -616,22 +631,26 @@
         <h2 class="section-title animate-on-scroll">Men Haqimda</h2>
         <div class="about-content animate-on-scroll">
             <div class="about-image">
-                <div class="profile-pic">👨‍💻</div>
+                <div class="profile-pic">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQADZS28hc8ejhw53P0-nRlVGTShslMc1WTIg&s"
+                        alt="">
+                </div>
             </div>
             <div class="about-text">
                 <p>
-                    Men passionate full-stack dasturchi bo'lib, zamonaviy web va mobil ilovalar yaratishda ixtisoslashganman. 
+                    Men Frontend dasturchi bo'lib, zamonaviy web ilovalar yaratishda
+                    ixtisoslashganman.
                     Texnologiya va dizaynning mukammal uyg'unligini yaratishga intilaman.
                 </p>
                 <br>
                 <p>
-                    Frontend va Backend texnologiyalarida chuqur bilimga ega bo'lib, 
-                    React, Vue.js, Node.js, Python va boshqa zamonaviy texnologiyalar bilan ishlaydi. 
+                    Frontend texnologiyalarida 9 oylik bilimga ega bo'lib,
+                    React, Html, Css boshqa zamonaviy texnologiyalar bilan ishlaydi.
                     Har bir loyihada foydalanuvchi tajribasini birinchi o'ringa qo'yaman.
                 </p>
                 <br>
                 <p>
-                    Doimiy o'rganish va rivojlanishga intilaman, yangi texnologiyalarni o'rganishdan zavqlanaman 
+                    Doimiy o'rganish va rivojlanishga intilaman, yangi texnologiyalarni o'rganishdan zavqlanaman
                     va hamjamiyat bilan bilim almashishni yaxshi ko'raman.
                 </p>
             </div>
@@ -643,53 +662,17 @@
         <h2 class="section-title animate-on-scroll">Ko'nikmalarim</h2>
         <div class="skills-grid animate-on-scroll">
             <div class="skill-card">
-                <span class="skill-icon">🌐</span>
+                <span class="skill-icon">
+                    <img src="https://media.istockphoto.com/id/1393379238/photo/work-performance-is-influenced-by-skills-abilities-and-competence-the-concept-of-the.jpg?s=612x612&w=0&k=20&c=JmF3ow_Nn1jLVsjVWSmrCgBpJhJ3FnxX2rVIxWlO68Q="
+                        alt="">
+                </span>
                 <h3 class="skill-name">Frontend Development</h3>
                 <p class="skill-description">
-                    React, Vue.js, Angular, HTML5, CSS3, JavaScript ES6+, 
-                    TypeScript va zamonaviy frontend kutubxonalari bilan ishlash.
+                    React, HTML5, CSS3, JavaScript ES6+
+                    va zamonaviy frontend kutubxonalari bilan ishlash.
                 </p>
             </div>
-            <div class="skill-card">
-                <span class="skill-icon">⚙️</span>
-                <h3 class="skill-name">Backend Development</h3>
-                <p class="skill-description">
-                    Node.js, Python, PHP, REST API, GraphQL, 
-                    ma'lumotlar bazasi dizayni va server arxitekturasi.
-                </p>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">📱</span>
-                <h3 class="skill-name">Mobile Development</h3>
-                <p class="skill-description">
-                    React Native, Flutter, Android va iOS platformalari 
-                    uchun cross-platform mobil ilovalar yaratish.
-                </p>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">🎨</span>
-                <h3 class="skill-name">UI/UX Design</h3>
-                <p class="skill-description">
-                    Figma, Adobe XD, foydalanuvchi interfeysi dizayni, 
-                    foydalanuvchi tajribasi va responsive dizayn.
-                </p>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">☁️</span>
-                <h3 class="skill-name">Cloud & DevOps</h3>
-                <p class="skill-description">
-                    AWS, Google Cloud, Docker, CI/CD, 
-                    Git, deployment va cloud arxitekturasi.
-                </p>
-            </div>
-            <div class="skill-card">
-                <span class="skill-icon">💾</span>
-                <h3 class="skill-name">Database Management</h3>
-                <p class="skill-description">
-                    MySQL, PostgreSQL, MongoDB, Redis, 
-                    ma'lumotlar bazasi optimallashtirish va boshqarish.
-                </p>
-            </div>
+
         </div>
     </section>
 
@@ -702,14 +685,11 @@
                 <div class="project-content">
                     <h3 class="project-title">E-Commerce Platform</h3>
                     <p class="project-description">
-                        To'liq funksional onlayn savdo platformasi. 
+                        To'liq funksional onlayn savdo platformasi.
                         Foydalanuvchi autentifikatsiyasi, to'lov tizimi, admin paneli bilan.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
-                        <span class="tech-tag">Stripe</span>
                     </div>
                     <div class="project-links">
                         <a href="https://majestic-yeot-3676c0.netlify.app/" class="project-link">Ko'rish →</a>
@@ -723,7 +703,7 @@
                 <div class="project-content">
                     <h3 class="project-title">Task Management App</h3>
                     <p class="project-description">
-                        Real-time collaborativ vazifalar boshqaruvi ilovasi. 
+                        Real-time collaborativ vazifalar boshqaruvi ilovasi.
                         Team management, notification system bilan.
                     </p>
                     <div class="project-tech">
@@ -744,7 +724,7 @@
                 <div class="project-content">
                     <h3 class="project-title">Analytics Dashboard</h3>
                     <p class="project-description">
-                        Ma'lumotlarni tahlil qilish uchun interaktiv dashboard. 
+                        Ma'lumotlarni tahlil qilish uchun interaktiv dashboard.
                         Real-time ma'lumotlar va vizualizatsiya.
                     </p>
                     <div class="project-tech">
@@ -765,7 +745,7 @@
                 <div class="project-content">
                     <h3 class="project-title">Music Streaming App</h3>
                     <p class="project-description">
-                        Spotify-ga o'xshash musiqa streaming ilovasi. 
+                        Spotify-ga o'xshash musiqa streaming ilovasi.
                         Audio player, playlist management, recommendation system.
                     </p>
                     <div class="project-tech">
@@ -791,11 +771,11 @@
                 <h3 style="color: white; margin-bottom: 2rem; font-size: 1.5rem;">Aloqa Ma'lumotlari</h3>
                 <div class="contact-item">
                     <div class="contact-icon">📧</div>
-                    <div class="contact-text">your.email@example.com</div>
+                    <div class="contact-text">raxmonjonovorifjon001@gmail.com</div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
-                    <div class="contact-text">+998 90 123 45 67</div>
+                    <div class="contact-text">+998 95 140 40 51</div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📍</div>
@@ -803,7 +783,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">💼</div>
-                    <div class="contact-text">linkedin.com/in/yourprofile</div>
+                    <div class="contact-text">linkedin.com/in/orifjon</div>
                 </div>
             </div>
 
@@ -831,7 +811,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="footer-text">© 2025 Your Name. Barcha huquqlar himoyalangan.</p>
+        <p class="footer-text">© 2025 Orifjon. Barcha huquqlar himoyalangan.</p>
     </footer>
 
     <script>
@@ -853,7 +833,7 @@
             for (let i = 0; i < elementCount; i++) {
                 const element = document.createElement('div');
                 element.className = 'floating-element';
-                
+
                 const size = Math.random() * 10 + 5;
                 element.style.width = size + 'px';
                 element.style.height = size + 'px';
@@ -861,7 +841,7 @@
                 element.style.top = Math.random() * 100 + '%';
                 element.style.animationDelay = Math.random() * 6 + 's';
                 element.style.animationDuration = (Math.random() * 4 + 4) + 's';
-                
+
                 container.appendChild(element);
             }
         }
@@ -869,11 +849,11 @@
         // Scroll animation
         function animateOnScroll() {
             const elements = document.querySelectorAll('.animate-on-scroll');
-            
+
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 150;
-                
+
                 if (elementTop < window.innerHeight - elementVisible) {
                     element.classList.add('animated');
                 }
@@ -886,7 +866,7 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     targetElement.scrollIntoView({
                         behavior: 'smooth',
@@ -899,13 +879,13 @@
         // Form submission
         document.querySelector('.contact-form').addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             // Add loading state
             const button = document.querySelector('.form-button');
             const originalText = button.textContent;
             button.textContent = 'Yuborilmoqda...';
             button.disabled = true;
-            
+
             // Simulate form submission
             setTimeout(() => {
                 button.textContent = 'Yuborildi ✓';
@@ -921,7 +901,7 @@
         // Initialize
         createFloatingElements();
         animateOnScroll();
-        
+
         // Event listeners
         window.addEventListener('scroll', animateOnScroll);
         window.addEventListener('resize', () => {
@@ -929,4 +909,5 @@
         });
     </script>
 </body>
+
 </html>
